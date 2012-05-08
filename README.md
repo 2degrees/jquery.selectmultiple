@@ -33,7 +33,10 @@ $('select[multiple]').selectmultiple();
 
 Any options passed to the widget, will be passed as options to the underlying sortable widget to allow for customization of that widget.
 
-## Testing done
+## Supported browsers
 
-* Firefox 12.0 on Ubuntu 11.10
+* Internet Explorer 6+
+* Firefox 12.0 on Ubuntu 11.10, OS X Lion 10.7.3
 * Chromium 18.0.1025.168 on Ubuntu 11.10
+* Chrome 18.0.1025.168 on OS X Lion 10.7.3
+* Safari 5.1.5 (7534.55.3) on OS X Lion 10.7.3
