@@ -1,0 +1,24 @@
+/*
+ * Custom styles for jQuery.selectmultiple demo
+ * 
+ */
+
+.ui-selectmultiple {
+    font-family: Trebuchet MS,Verdana,Arial,sans-serif;
+    overflow: hidden;
+}
+.ui-selectmultiple ol {
+    float: left;
+    height: 200px;
+    list-style: none;
+    margin: 0;
+    margin-right: 10px;
+    overflow: auto;
+    padding: 0 0 2.5em;
+    width: 200px;
+}
+.ui-selectmultiple li {
+    font-size: 15px;
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+}
