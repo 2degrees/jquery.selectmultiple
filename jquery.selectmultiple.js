@@ -1,7 +1,7 @@
 /*!
  * jQuery UI Sortable 1.8.20
  *
- * Copyright (c) 2011, 2degrees Limited <egoddard@tech.2degreesnetwork.com>.
+ * Copyright (c) 2011-2014, 2degrees Limited <egoddard@tech.2degreesnetwork.com>.
  * All Rights Reserved.
  *
  * This file is part of jquery.selectmultiple
@@ -23,7 +23,17 @@
  *  jquery.ui.sortable.js
  */
 
-(function ($) {
+(function (factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD
+        define(['jquery', 'jquery.ui'], factory);
+    } else {
+        // Browser globals
+        factory(jQuery);
+    }
+}(function ($) {
+    'use strict';
+
     var CSS_CLASSES = {
         HIGHLIGHT: 'ui-state-highlight',
         DEFAULT: 'ui-state-default'
@@ -116,4 +126,4 @@
             return this;
         }
     });
-})(jQuery);
+}));

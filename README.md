@@ -29,6 +29,20 @@ Then inside a javascript file (or inline in a script tag), call the ``selectmult
 $('select[multiple]').selectmultiple();
 ```
 
+### AMD
+
+Alternatively you can include the module with require.js or similar:
+
+``` javascript
+require(['jquery', 'jquery.selectmultiple'], function ($) {
+  $(function () {
+    $('select[multiple]').selectmultiple();
+  });
+});
+```
+
+*NB* This relies on jQuery UI being available under the name 'jquery.ui'.
+
 ## Notes
 
 Any options passed to the widget, will be passed as options to the underlying sortable widget to allow for customization of that widget.
